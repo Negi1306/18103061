@@ -9,7 +9,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-public class Focused_crawler {
+public class Crawler {
 
     public static void main(String[] args) throws IOException {
         // TODO Auto-generated method stub
