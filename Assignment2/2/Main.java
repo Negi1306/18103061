@@ -9,7 +9,7 @@ public class Main {
         int[] ar = new int[n];
         System.out.println("Enter the elements of the array in range(0-20): ");
         for(int i=0;i<n;i++){
-            ar[i] = scanner.nextInt();
+            ar[i] = input.nextInt();
         }
         int[] countingSort = new int[21];
         for(int i=0;i<n;i++){
