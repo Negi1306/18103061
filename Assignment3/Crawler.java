@@ -12,7 +12,6 @@ import org.jsoup.select.Elements;
 public class Crawler {
 
     public static void main(String[] args) throws IOException {
-        // TODO Auto-generated method stub
         
         File csvFile = new File("Ftags_text.csv");
         csvFile.createNewFile();
@@ -76,7 +75,7 @@ public class Crawler {
                         
                     }
                 }
-                //System.out.println(temp.tagName()+ " "+ temp.text());
+              
             }
                 
         }
@@ -84,9 +83,7 @@ public class Crawler {
         for(int i=0;i<fac_urlList.size();i++)
         {
             String currUrl = fac_urlList.get(i);
-            // if(currUrl.contains("faculty") || currUrl.contains("faculties"))
-            // {   
-                //System.out.println(currUrl);
+            
                 Document doc = Jsoup.connect(currUrl).ignoreHttpErrors(true).ignoreContentType(true).get();
                 Elements ele= doc.getAllElements();
                 for(Element temp: ele)
