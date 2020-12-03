@@ -27,7 +27,7 @@ public class Solution2{
             sub.append(s.charAt(0));
             for(i=0; i<s.length()-1; ++i)
                 sub.append('*');
-            x="\\b"+x+"\\b";
+            s="\\b"+s+"\\b";
             paragraph=paragraph.replaceAll(s, sub.toString());
         }
         System.out.println(paragraph);
